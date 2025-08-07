@@ -3,7 +3,7 @@
 
 int main() {
     int decimal;
-    std::cout << "Enter a decimal: ";
+    std::cout << "Enter a decimals: ";
     std::cin >> decimal;
 
     std::vector<int> binary;
@@ -18,4 +18,6 @@ int main() {
     }
       std::cout << std::endl;
       return 0;
+
+      //check
 }
