@@ -2,45 +2,42 @@ bool is_palindrome(int integers[], int length);
 int sum_array_elements(int integers[], int length);
 
 int sum_if_palindrome(int integers[], int length) {
-    
-    int palin;
     int sum;
     if (length < 1)
     {
         return -1;
     } else {
-        palin = is_palindrome(integers, length);
-        if (palin == 0) {
+        if (is_palindrome(integers, length) == false) {
             return -2;
-        } else {
+        } else if (is_palindrome(integers, length) == true) {
          sum = sum_array_elements(integers, length);
          return sum;
         }
 }
 }
 
-bool is_palindrome(int integers[], int length) {
-    if (length % 2 == 0)
+bool is_palindrome(int array[], int n) {
+    if (n % 2 == 0)
        {
-         for (int i = 0; i < (length/2)-2; i++)
+         for (int i = 0; i < (n/2)-2; i++)
         {
-            if (integers[i] > integers[i+1])
+            if (array[i] > array[i+1])
             {
                 return false;
             }
             
         }
-        for (int i = (length/2); i < length-1; i++)
+        for (int i = (n/2); i < n-1; i++)
         {
-            if (integers[i] < integers[i+1])
+            if (array[i] < array[i+1])
             {
                 return false;
             }
             
         }
-        for (int i = 0; i < (length/2)-1; i++)
+        for (int i = 0; i < (n/2)-1; i++)
         {
-            if (integers[i] != integers[length-i-1])
+            if (array[i] != array[n-i-1])
             {
                 return false;
             }
@@ -49,25 +46,25 @@ bool is_palindrome(int integers[], int length) {
         
         return true;
        } else {
-            for (int i = 0; i < ((length-1)/2)-1; i++)
+            for (int i = 0; i < ((n-1)/2)-1; i++)
         {
-            if (integers[i] > integers[i+1])
+            if (array[i] > array[i+1])
             {
                 return false;
             }
             
         }
-        for (int i = ((length-1)/2); i < length-1; i++)
+        for (int i = ((n-1)/2); i < n-1; i++)
         {
-            if (integers[i] < integers[i+1])
+            if (array[i] < array[i+1])
             {
                 return false;
             }
             
         }
-        for (int i = 0; i < ((length-1)/2)-1; i++)
+        for (int i = 0; i < ((n-1)/2)-1; i++)
         {
-            if (integers[i] != integers[length-i-1])
+            if (array[i] != array[n-i-1])
             {
                 return false;
             }
@@ -75,7 +72,7 @@ bool is_palindrome(int integers[], int length) {
         }
         
         return true;
-    }
+    } 
 }
 
 int sum_array_elements(int integers[], int length) {
