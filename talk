@@ -1,0 +1,12 @@
+//main.cpp, workshop.h
+//implementation = main, header = workshop
+
+//how to use;
+//#include "workshop.h" (in main)
+//this tells the computer to take the contents of main.h and put it on the line above
+
+//pointers show the memory adress of a given variable, this allows aspects such as variable array sizes, 
+//can be used to pass memory
+
+
+//new = malloc, used to ask the heap for a space of x memory to store data
