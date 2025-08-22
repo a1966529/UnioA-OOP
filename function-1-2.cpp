@@ -4,13 +4,11 @@
 PersonList createPersonList(int n) {
     PersonList perlist;
     perlist.numPeople = n;
-    Person array[n];
-
-    Person* ptr = array;
+    Person *ptr = new Person[n];
     for (int i = 0; i < n; i++)
     {
-        array[i].name = "Jane Doe";
-        array[i].age = 1;
+        ptr[i].name = "Jane Doe";
+        ptr[i].age = 1;
     }
     perlist.people = ptr;
     return perlist;
