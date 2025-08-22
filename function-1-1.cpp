@@ -12,7 +12,7 @@ Person* createPersonArray(int n) {
     
      for (int i = 0; i < 5; i++)
     {
-        std::cout << "Person " << i << ": " << (array[i].name) << " ," << array[i].age << std::endl;
+        std::cout << "Person " << i + 1 << ": " << (array[i].name) << ", " << array[i].age << std::endl;
     }
     std::cout;
     return ptr;
