@@ -6,7 +6,15 @@ extern PersonList shallowCopyPersonlist(PersonList PL);
 int main()
 {
     PersonList PL_1;
-    
+    PL_1.numPeople = 5;
+    Person arr[5];
+    for (int i = 0; i < 5; i++)
+    {
+        arr[i].name = "Jane Doe";
+        arr[i].age = 1;
+    }
+    PL_1.people = arr;
+
     int size = 5;
     PersonList PL = shallowCopyPersonlist(PL_1); 
     Person* ptr = PL.people;
