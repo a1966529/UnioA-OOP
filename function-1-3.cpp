@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Person.h"
 
-PersonList deepCopyPersonlist(PersonList PL) {
+PersonList deepCopyPersonList(PersonList PL) {
 
     int n = PL.numPeople;
     PersonList perlist;

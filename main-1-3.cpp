@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Person.h"
 
-extern PersonList deepCopyPersonlist(PersonList PL);
+extern PersonList deepCopyPersonList(PersonList PL);
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
     PL_1.people = arr;
     int size = 5;
     
-    PersonList PL = deepCopyPersonlist(PL_1); 
+    PersonList PL = deepCopyPersonList(PL_1); 
     Person* ptr = PL.people;
         std::cout << "NumberPeople: " << PL.numPeople << std::endl;
         for (int i = 0; i < size; i++)

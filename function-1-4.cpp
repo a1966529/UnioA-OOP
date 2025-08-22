@@ -1,7 +1,7 @@
 #include <iostream>
 #include "Person.h"
 
-PersonList shallowCopyPersonlist(PersonList PL) {
+PersonList shallowCopyPersonList(PersonList PL) {
 
     int n = PL.numPeople;
     PersonList perlist;
