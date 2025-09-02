@@ -12,5 +12,6 @@ public:
 
     warrior(std::string name, int health, int damage, std::string weapon);
 
+    void weaponName(std::string weapon);
 };
 #endif

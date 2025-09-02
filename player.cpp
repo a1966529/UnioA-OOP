@@ -2,6 +2,10 @@
 #include <string>
 #include <iostream>
 
+player::player() {
+
+}
+
 player::player(std::string name, int health, int damage) {
     this->name = name;
     this->health = health;
@@ -9,7 +13,8 @@ player::player(std::string name, int health, int damage) {
 }
 
 void player::attack(player* opponent, int damage) {
-    opponent->takeDamage(damage);
+    this->dealDam = damage;
+    // opponent->takeDamage(attack);
 }
 
 void player::takeDamage(int damage) {
@@ -25,7 +30,7 @@ void player::setHealth(int health) {
 }
     
 std::string player::getName() {
-    return name;
+    return this->name;
 }
 
 void player::setName(std::string name) {
@@ -33,5 +38,5 @@ void player::setName(std::string name) {
 }
 
 int player::getDamage() {
-    return damage;
+    return this->damage;
 }

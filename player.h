@@ -9,8 +9,10 @@ private:
     std::string name;
     int health;
     int damage;
-    int attack;
+    int dealDam;
 public:
+    player();
+
     player(std::string name, int health, int damage);
 
     void attack(player* opponent, int damage);
@@ -24,6 +26,9 @@ public:
     std::string getName();
 
     void setName(std::string name);
+
+    int getDamage();
+
 };
 
 #endif
