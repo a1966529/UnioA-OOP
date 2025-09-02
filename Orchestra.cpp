@@ -24,12 +24,12 @@ int Orchestra::get_current_number_of_members() {
 }
 
 bool Orchestra::has_instrument(std::string instrument) {
-    for (int i = 0; i < current_count; ++i) {
+   for (int i = 0; i < current_count; ++i) {
         if (members[i].get_instrument() == instrument) {
             return true;
         }
     }
-    return false;
+    return false; 
 }
 
 Musician* Orchestra::get_members() {
