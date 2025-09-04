@@ -6,7 +6,7 @@
 using namespace std;
 int main() {
 //Wizard(name, health, damage, mana)
-wizard wizard("Gandalf", 100, 20, 50);
+wizard wizard("Gandalf", 100, 30, 50);
 //Warrior(name, health, damage, weapon)
 warrior warrior("Aragorn", 120, 25, "Sword");
 cout << "Let the battle begin!" << endl;

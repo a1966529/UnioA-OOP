@@ -14,6 +14,7 @@ public:
     
     void setMana(int mana);
 
+    int getMana();
 
 };
 #endif

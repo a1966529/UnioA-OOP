@@ -14,7 +14,7 @@ player::player(std::string name, int health, int damage) {
 
 void player::attack(player* opponent, int damage) {
     this->dealDam = damage;
-    // opponent->takeDamage(attack);
+    opponent->takeDamage(dealDam);
 }
 
 void player::takeDamage(int damage) {
