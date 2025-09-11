@@ -9,7 +9,6 @@ private:
     std::string name;
     int health;
     int damage;
-    int dealDam;
 public:
     player();
 

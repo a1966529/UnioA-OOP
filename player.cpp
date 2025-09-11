@@ -13,8 +13,8 @@ player::player(std::string name, int health, int damage) {
 }
 
 void player::attack(player* opponent, int damage) {
-    this->dealDam = damage;
-    opponent->takeDamage(dealDam);
+    // this->dealDam = damage;
+    opponent->takeDamage(damage);
 }
 
 void player::takeDamage(int damage) {

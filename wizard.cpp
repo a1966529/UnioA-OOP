@@ -7,8 +7,7 @@ void wizard::castSpell(player* opponent) {
     attack(opponent, getDamage());
     }
 
-wizard::wizard(std::string name, int health, int damage, int mana)
-    : player(name, health, damage)
+wizard::wizard(std::string name, int health, int damage, int mana) : player(name, health, damage)
     {
     setMana(mana);
     }
