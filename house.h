@@ -9,6 +9,8 @@ private:
     appliance** House;
     int numAppliances;
     int totalAppliances;
+protected: 
+    
 public:
     house();
 
