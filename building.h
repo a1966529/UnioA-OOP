@@ -1,21 +1,23 @@
 #ifndef BUILDING_H
 #define BUILDING_H
 
-#include "player.h"
+// #include "player.h"
 #include <string>
 
-class building : public player
+class building
 {
 private:
     float damage; //float for multipliers
     int range;
     float fire_rate;
-    int level;
+    std::string damageType;
     // std::string priority;  for if we get to it
+protected:
+    int level;
 public:
     building();
 
-    building(float damage, int range, float fire_rate);
+    building(float damage, int range, float fire_rate, std::string damageType);
 
     float get_damage();
 
@@ -25,13 +27,19 @@ public:
 
     int get_level();
 
-    void set_damage(int damage);
+    std::string get_damageType();
+
+    void set_damage(float damage);
+
+    void set_fire_rate(int fire_rate);
+
+    void cost(int money);
 
     // void set_priority(std::string priority);
 
     virtual void upgrade();
 
-    virtual void attack(int enemy);
+    // virtual void attack(int enemy);
 };
 
 #endif

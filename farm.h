@@ -1,16 +1,19 @@
-#ifndef MAGE_TOWER_H
-#define MAGE_TOWER_H
+#ifndef FARM_H
+#define FARM_H
 
     #include "building.h"
 
-    class mage_tower : public building
+    class farm : public building
     {
     private: 
         int location;
+        int farmRate;
     public:
-        mage_tower(int location);
+        farm(int location);
 
         void upgrade() override;
+
+        int get_farmRate();
 
         // void attack(int enemy) override;
 

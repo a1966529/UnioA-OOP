@@ -1,14 +1,14 @@
-#ifndef MAGE_TOWER_H
-#define MAGE_TOWER_H
+#ifndef BALLISTA_H
+#define BALLISTA_H
 
     #include "building.h"
 
-    class mage_tower : public building
+    class ballista : public building
     {
     private: 
         int location;
     public:
-        mage_tower(int location);
+        ballista(int location);
 
         void upgrade() override;
 
