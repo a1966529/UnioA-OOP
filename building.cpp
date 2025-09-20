@@ -10,6 +10,10 @@
         this->damageType = damageType;
     }
 
+    // building::~building() {
+    // }
+
+
     float building::get_damage() {
         return damage;
     }
@@ -35,10 +39,12 @@
         this->damage = damage;
     }
 
-    void building::set_fire_rate(int fire_rate) {
+    void building::set_fire_rate(float fire_rate) {
         this->fire_rate = fire_rate;
     }
 
     void building::upgrade() {}
     
+    // void cost(int money);
+
     // void building::attack(int enemy) {}

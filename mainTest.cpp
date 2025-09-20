@@ -6,22 +6,44 @@
 #include <iostream>
 
 int main() {
-    player P1;
-    // std::cout << P1.get_money() << " " << P1.get_health() << std::endl;
+    // intialise player
+    player Plr(2);
 
-    // P1.add_health(-10);
-    // P1.add_money(150);
+    // setting how many spaces are availible for buildings
+    building_space MAP1(4);
 
-    // std::cout << P1.get_money() << " " << P1.get_health() << std::endl;
-
+    // building placement 
     ballista B1(1);
     mage_tower MT1(2);
     farm F1(3);
     ballista B2(4);
 
-    building_space MAP1(4);
     MAP1.popularise(&B1);
     MAP1.popularise(&MT1);
     MAP1.popularise(&F1);
     MAP1.popularise(&B2);
+
+    // geting a variable type
+    std::cout << MAP1.get_space()[0]->get_damageType() << std::endl;
+
+    // setting a variable
+    std::cout << "initial damage: " << MAP1.get_space()[0]->get_damage() << std::endl;
+    MAP1.get_space()[0]->set_damage(10);
+    std::cout << "final damage: " << MAP1.get_space()[0]->get_damage() << std::endl;
+
+    // upgrade a building
+    std::cout<< "initial level: " << MAP1.get_space()[0]->get_level() << " with intial fire rate: " 
+    << MAP1.get_space()[0]->get_fire_rate() << std::endl;
+
+    MAP1.get_space()[0]->upgrade();
+
+    std::cout<< "initial level: " << MAP1.get_space()[0]->get_level() << " with intial fire rate: " 
+    << MAP1.get_space()[0]->get_fire_rate() << std::endl;
+
+    MAP1.get_space()[0]->upgrade();
+
+    std::cout<< "initial level: " << MAP1.get_space()[0]->get_level() << " with intial fire rate: " 
+    << MAP1.get_space()[0]->get_fire_rate() << std::endl;
+
+    
 }

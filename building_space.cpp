@@ -8,11 +8,11 @@ building_space::building_space(int total_space) {
 }
 
 building** building_space::get_space() {
-
+    return space;
 }
 
 bool building_space::popularise(building* type) {
-    if (total_space < occupied)
+    if (occupied < total_space)
         {
             space[occupied] = type;
             occupied++;

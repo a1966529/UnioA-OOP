@@ -4,20 +4,20 @@ class player
 {
 private:
     // int waveNumber = 1;
-    // int difficulty;
+    int difficulty;
     int health;
     int money;
     // int multiplier;
 public:
     player();
 
-    // player(int difficulty);
+    player(int difficulty);
 
     //~player();    just in case
 
     // int get_waveNumber();
 
-    // int get_difficulty();
+    int get_difficulty();
 
     int get_health();
 

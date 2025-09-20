@@ -15,6 +15,8 @@
         building** get_space();
 
         bool popularise(building* type);
+
+        // ~building_space();
     };
 
 #endif

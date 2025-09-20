@@ -5,7 +5,7 @@
     }
 
     void ballista::upgrade() {
-        if (level = 1) {
+        if (level == 1) {
             set_fire_rate(get_fire_rate()*1.5);
             level++;
         } else {
