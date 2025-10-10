@@ -3,6 +3,7 @@
 #include "farm.h"
 #include "mage_tower.h"
 #include "building_space.h"
+#include "wave.h"
 #include <iostream>
 
 int main() {
@@ -46,4 +47,16 @@ int main() {
     << MAP1.get_space()[0]->get_fire_rate() << std::endl;
 
     
+
+
+    // intitalise ememy
+
+    int quantity_enemy[5] = {1,0,3,2,1};
+    std::string enemy_type[5] = {"goblin", "goblin", "skeleton", "goblin", "ogre"};
+
+    wave W1(quantity_enemy, enemy_type);
+    
+    enemy** check = W1.get_wave_enemies();
+
+    std::cout << check[4]->get_health() << std::endl ;
 }

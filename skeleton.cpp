@@ -1,6 +1,6 @@
 #include "skeleton.h"
 
-skeleton::skeleton(int quantity) : enemy(quantity, 2, 30, "magical") {
+skeleton::skeleton(int quantity) : enemy(quantity, 2, 20, "magical") {
     this->quantity = quantity;
 }
 

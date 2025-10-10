@@ -11,6 +11,9 @@
         std::string res;
         int quantity;
     public:
+
+        enemy();
+
         enemy(int quantity, int damage, int health, std::string res);
 
         void take_damage(int damage, std::string dam_type);
@@ -21,7 +24,7 @@
 
         std::string get_res();
 
-        virtual ~enemy();
+        // virtual ~enemy();
     };
     
 #endif

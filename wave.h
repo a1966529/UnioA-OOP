@@ -12,9 +12,9 @@
         // int E4;
         // int E5;
         // int size;
-        std::string goblin;
-        std::string ogre;
-        std::string skeleton;
+        // std::string goblin;
+        // std::string ogre;
+        // std::string skeleton;
         // std::string type1;
         // std::string type2;
         // std::string type3;
@@ -31,7 +31,7 @@
 
         enemy **get_wave_enemies();
 
-        ~wave();
+        // ~wave();
     };
     
 #endif

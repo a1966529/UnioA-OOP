@@ -7,6 +7,13 @@ enemy::enemy(int quantity, int damage, int health, std::string res) {
     this->quantity = quantity;
 }
 
+enemy::enemy(){
+    this->damage = 0;
+    this->health = 0;
+    this->res = "none";
+    this->quantity = 0;   
+}
+
 void enemy::take_damage(int damage, std::string dam_type) {
     if (res == dam_type)
     {
